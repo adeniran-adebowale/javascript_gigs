@@ -1,6 +1,10 @@
 function allArrayMethods(arr,el){
     let internalArr=[100,345];
    let  fn=(a) => a+a;
+   
+ 
+
+console.log("Remaining array using destructuring: ",rest);
 console.log("Add-to-the-end Method: ",arr.push(el));
 console.log("Remove-the-last-element Method: ",arr.pop());
 console.log("Remove-the-first-element Method: ",arr.shift());
@@ -17,14 +21,17 @@ console.log("Filter Method: ",arr.filter(fn));
 console.log("Map Method: ",arr.map(fn));
 console.log("Reduce Method: ",arr.reduce(fn));
 
- 
-
 
 
 }
 
 let arrOfNumbers=[1,2,3,4,5,6,7,8,9];
 let arrOfStrings=["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten"];
+const [a,b, ...rest]=arrOfNumbers;
 
 allArrayMethods(arrOfNumbers,256);
 allArrayMethods(arrOfStrings,"256");
+
+
+
+console.log("Remaining array using destructuring: ",rest);
