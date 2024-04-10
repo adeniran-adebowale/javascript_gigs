@@ -1,21 +1,21 @@
 function allArrayMethods(arr,el){
     let internalArr=[100,345];
    let  fn=(a) => a+a;
-console.log(arr.push(el));
-console.log(arr.pop());
-console.log(arr.shift());
-console.log(arr.unshift(el));
-console.log(arr.splice(2));
-console.log(arr.slice(1,3));
-console.log(arr.concat(arr,internalArr));
-console.log(arr.join(","));
-console.log(arr.indexOf(1));
-console.log(arr.lastIndexOf(3));
-console.log(arr.sort());
-console.log(arr.reverse());
-console.log(arr.filter(fn));
-console.log(arr.map(fn));
-console.log(arr.reduce(fn));
+console.log("Add-to-the-end Method: ",arr.push(el));
+console.log("Remove-the-last-element Method: ",arr.pop());
+console.log("Remove-the-first-element Method: ",arr.shift());
+console.log("Put-element-at-the-beginning-of-the-array Method: ",arr.unshift(el));
+console.log("Splice-the-Array Method: ",arr.splice(2));
+console.log("Get-some-Part_of_array Method: ",arr.slice(1,3));
+console.log("Join-two-or-More-Arrays Method: ",arr.concat(arr,internalArr));
+console.log("Join-the-array-element Method: ",arr.join(","));
+console.log("Return-the-index Method: ",arr.indexOf(1));
+console.log("Last_Index  Method: ",arr.lastIndexOf(3));
+console.log("Sort Method: ",arr.sort());
+console.log("Reverse Method: ",arr.reverse());
+console.log("Filter Method: ",arr.filter(fn));
+console.log("Map Method: ",arr.map(fn));
+console.log("Reduce Method: ",arr.reduce(fn));
 
  
 
