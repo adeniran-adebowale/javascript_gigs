@@ -42,4 +42,4 @@ const getInfo=async url=>{
 let t= getInfo('https://jsonplaceholder.typicode.com/users').then(successCallback,failureCallback);
 
 // console.log("This is Me: \n", fetch('https://jsonplaceholder.typicode.com/users'));
-console.log('Some: ',t[0]);
+console.log('Some: ',t.toString());
