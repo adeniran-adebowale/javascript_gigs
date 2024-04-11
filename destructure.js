@@ -1,6 +1,6 @@
 const repo=require('./repo.js');
 
-let {name, email, address}=repo;
+let {name, email, address}=repo[0];
 
 console.log("Name: ",name,"Email: ", email);
 
