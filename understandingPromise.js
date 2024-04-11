@@ -33,7 +33,7 @@ const timeCounter=(ms)=>setTimeout(()=>console.log('I have been processed!'),ms)
 const getInfo=async url=>{
     const resp=await fetch(url);
     const users=await resp.json();
-   return JSON.parse(users);
+   return users;
 }
 // console.log(promise.then(t))
 // timeCounter(6000);
@@ -42,4 +42,4 @@ const getInfo=async url=>{
 let t= getInfo('https://jsonplaceholder.typicode.com/users').then(successCallback,failureCallback);
 
 // console.log("This is Me: \n", fetch('https://jsonplaceholder.typicode.com/users'));
-console.log('Some: ',t[0]);
+console.log('Some: ',t);
